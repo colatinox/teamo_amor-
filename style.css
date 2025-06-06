@@ -1,0 +1,216 @@
+/* Fonte e cores */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000000;
+  color: #ff4d6d;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.centralizado {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+/* Frase de amor */
+.frase-amor {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  margin-top: 15px;
+  color: #ff7585;
+}
+
+/* Contador */
+.contador {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+/* Linha do tempo */
+#linha-do-tempo ul {
+  list-style: none;
+  padding: 0;
+}
+
+#linha-do-tempo li {
+  margin: 12px 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Polaroid e carrossel */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 15px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #ff4d6d transparent;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #ff4d6d;
+  border-radius: 4px;
+}
+
+.polaroid {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  border: 10px solid white;
+  box-shadow: 0 4px 8px rgba(255, 77, 109, 0.7);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.polaroid:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+/* Botões */
+button {
+  background-color: #ff4d6d;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ff7585;
+}
+
+/* Spotify */
+.spotify-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+/* Quebra-cabeça canvas */
+#quebra-cabeca {
+  background-color: #222;
+  cursor: grab;
+}
+
+/* Mural de recados */
+#mural {
+  margin-top: 20px;
+}
+
+#recado {
+  width: 100%;
+  height: 100px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid #ff4d6d;
+  resize: none;
+  background-color: #111;
+  color: #ff4d6d;
+}
+
+#historico-recados {
+  margin-top: 15px;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ff4d6d;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #111;
+}
+
+.msg-login {
+  color: #ff7585;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+/* Carta */
+.carta {
+  background-color: #1a0000;
+  border: 2px solid #ff4d6d;
+  padding: 25px;
+  border-radius: 15px;
+  font-family: 'Georgia', serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  box-shadow: 0 0 15px #ff4d6d;
+  color: #ff7585;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.assinatura {
+  margin-top: 20px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #ff4d6d;
+  text-align: right;
+}
+
+/* Jogo da Memória */
+.memoria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Corações caindo */
+#hearts-container {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  overflow: hidden;
+}
+.esteira {
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #ff4d6d;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.esteira-track {
+  display: flex;
+  width: calc(250px * 8); /* 8 imagens com largura 250px */
+  animation: deslizar 20s linear infinite;
+}
+
+.esteira-track img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

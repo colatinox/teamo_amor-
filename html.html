@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Presente para Kelly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Corações caindo -->
+  <div id="hearts-container"></div>
+
+  <header>
+    <div id="frase-amor" class="frase-amor"></div>
+  </header>
+
+   <!-- Música -->
+<section id="musica-section" class="centralizado">
+  <img src="imagens/spotify_logo.jpg" alt="Spotify" class="spotify-logo" />
+  <audio id="audio-player" controls>
+    <source src="musica/bryan_adams_heaven.mp3" type="audio/mpeg" />
+    Seu navegador não suporta áudio.
+  </audio>
+  <button onclick="tocarMusica()">Ouvir Música</button>
+</section>
+
+<script>
+  function tocarMusica() {
+    const player = document.getElementById('audio-player');
+    player.play();
+  }
+</script>
+
+
+
+  <!-- Contador de tempo -->
+  <section id="contador-section" class="centralizado">
+    <h2>Nós somo felizes juntos há...</h2>
+    <div id="contador" class="contador"></div>
+  </section>
+
+  <!-- Linha do tempo -->
+  <section id="linha-do-tempo" class="centralizado">
+    <h2>Linha do Tempo</h2>
+    <ul>
+      <li><strong>06/12/2024</strong> – Começamos a nos falar 💬</li>
+      <li><strong>29-30/03/2025</strong> – Primeiro encontro na casa da sua tia 🏠</li>
+      <li><strong>05/04/2025</strong> – Meu primeiro "eu te amo" 💘</li>
+      <li><strong>06/04/2025</strong> – Data oficial do nosso namoro 💑</li>
+      <li><strong>20/04/2025</strong> - Primeira vez que você veio na minha casa</li>
+      <li><strong>22/04/2025</strong> - Dia em que o seu gato nasceu</li>
+      <li><strong>06/05/2025</strong> - Nosso primeiro mês</li> 
+      <li><strong>06/06/2025</strong> - Nosso segundo mês</li>
+      <li><strong>12/06/2025</strong> - Nosso primeiro dia dos namorados</li>
+      <li><strong>00/00/0000</strong> - Nossa primeira viagem juntos</li>
+      <li><strong>00/00/0000</strong> - Nosso primeiro show juntos</li>
+
+    </ul>
+  </section>
+
+  <!-- Carrossel Polaroid -->
+  <section id="carousel-section" class="centralizado">
+    <h2>Galeria de Fotos</h2>
+    <div class="carousel">
+      <img src="imagens/kellycrianca.jpg" alt="Kelly criança" class="polaroid" />
+      <img src="imagens/eucrianca.jpg" alt="Eu criança" class="polaroid" />
+      <img src="imagens/KellyDeSally.jpg" alt="Kelly de Sally" class="polaroid" />
+      <img src="imagens/afotododiadonossonamoro.jpg" alt="Foto do dia" class="polaroid" />
+      <img src="imagens/amordaminhavida.jpg" alt="Amor da minha vida" class="polaroid" />
+      <img src="imagens/kellydeftones.jpg" alt="Kelly Deftones" class="polaroid" />
+      <img src="imagens/kellynick.jpg" alt="Kelly Nick" class="polaroid" />
+      <img src="imagens/kellyskinliro.jpg" alt="Kelly Skin Liro" class="polaroid" />
+      <img src="imagens/meupresente.jpg" alt="Meu presente" class="polaroid" />
+      <img src="imagens/nosdois.jpg" alt="Nós dois" class="polaroid" />
+      <img src="imagens/noslindos.jpg" alt="Nós lindos" class="polaroid" />
+    </div>
+  </section>
+
+  <!-- Quebra-cabeça -->
+  <section id="quebra-cabeca-section" class="centralizado">
+    <h2>Quebra-cabeça do Amor</h2>
+    <canvas id="quebra-cabeca" width="768" height="1024" style="border:2px solid #ff4d6d; border-radius:10px;"></canvas>
+    <br />
+    <button id="btn-embaralhar">Embaralhar</button>
+  </section>
+
+  <!-- Esteira de Fotos -->
+<section id="esteira-section" class="centralizado">
+  <div class="esteira">
+    <div class="esteira-track">
+      <img src="imagens/kellycrianca.jpg" alt="Kelly criança" class="polaroid" />
+      <img src="imagens/eucrianca.jpg" alt="Eu criança" class="polaroid" />
+      <img src="imagens/KellyDeSally.jpg" alt="Kelly de Sally" class="polaroid" />
+      <img src="imagens/afotododiadonossonamoro.jpg" alt="Foto do dia" class="polaroid" />
+      <img src="imagens/amordaminhavida.jpg" alt="Amor da minha vida" class="polaroid" />
+      <img src="imagens/kellydeftones.jpg" alt="Kelly Deftones" class="polaroid" />
+      <img src="imagens/kellynick.jpg" alt="Kelly Nick" class="polaroid" />
+      <img src="imagens/kellyskinliro.jpg" alt="Kelly Skin Liro" class="polaroid" />
+      <img src="imagens/meupresente.jpg" alt="Meu presente" class="polaroid" />
+      <img src="imagens/nosdois.jpg" alt="Nós dois" class="polaroid" />
+      <img src="imagens/noslindos.jpg" alt="Nós lindos" class="polaroid" />
+      <!-- Duplicar as imagens para efeito contínuo -->
+      <img src="imagens/kellycrianca.jpg" alt="Kelly criança" class="polaroid" />
+      <img src="imagens/eucrianca.jpg" alt="Eu criança" class="polaroid" />
+      <img src="imagens/KellyDeSally.jpg" alt="Kelly de Sally" class="polaroid" />
+      <img src="imagens/afotododiadonossonamoro.jpg" alt="Foto do dia" class="polaroid" />
+      <img src="imagens/amordaminhavida.jpg" alt="Amor da minha vida" class="polaroid" />
+      <img src="imagens/kellydeftones.jpg" alt="Kelly Deftones" class="polaroid" />
+      <img src="imagens/kellynick.jpg" alt="Kelly Nick" class="polaroid" />
+      <img src="imagens/kellyskinliro.jpg" alt="Kelly Skin Liro" class="polaroid" />
+      <img src="imagens/meupresente.jpg" alt="Meu presente" class="polaroid" />
+      <img src="imagens/nosdois.jpg" alt="Nós dois" class="polaroid" />
+      <img src="imagens/noslindos.jpg" alt="Nós lindos" class="polaroid" />
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Quiz -->
+  <section id="quiz-section" class="centralizado">
+    <h2>Quiz do Amor</h2>
+    <div id="quiz"></div>
+    <button id="btn-verificar">Ver Resultado</button>
+    <div id="resultado-quiz"></div>
+  </section>
+
+  <!-- Jogo da Memória -->
+  <section id="memoria-section" class="centralizado">
+    <h2>Jogo da Memória do Amor</h2>
+    <div id="memoria-jogo" class="memoria-grid"></div>
+  </section>
+
+  <!-- Mural de Recados -->
+  <section id="mural-section" class="centralizado">
+    <h2>Mural de Recados</h2>
+    <div id="login-form">
+      <input type="text" id="usuario" placeholder="Usuário" />
+      <input type="password" id="senha" placeholder="Senha" />
+      <button id="btn-login">Entrar</button>
+      <div id="msg-login" class="msg-login"></div>
+    </div>
+    <div id="mural" style="display:none;">
+      <textarea id="recado" placeholder="Escreva seu recado"></textarea>
+      <button id="btn-postar">Postar</button>
+      <div id="historico-recados"></div>
+    </div>
+  </section>
+
+  <!-- Carta Romântica -->
+  <section id="carta-section" class="centralizado">
+    <div class="carta">
+      <h2>Para Kelly, com amor</h2>
+      <p>
+        Te amar é o que me faz mais feliz nesse mundo. Ter você comigo faz eu me sentir especial e amado, como eu sempre quis ser! Você é a razão e a maior responsável da minha felicidade. Com você eu me sinto em paz com tudo, esqueço de todos os meus problemas, me sinto no céu! Mas acima de tudo, me sinto genuinamente feliz e eternamente agradecido por ter você na minha vida, eu agradeço bastante a Deus por você ser a garota incrível que você é. Já te falei que nunca imaginei que a gente namoraria, mas eu sempre te olhava e te achava incrível, não só linda, mas brilhante, reluzente, feliz, engraçada e muito divertida. Eu te amo nos piores e nos melhores dias, nas brigas e nas felicidades, no sol e na chuva, no dia e na noite, no começo e no fim. Não quero que tenhamos um fim, eu farei de tudo que seja possível e impossível para nos manter juntos e enfim nos casarmos e eu poder sempre dormir ao seu lado, e acordar com um beijo seu e sentir o quentinho que só o seu abraço possui. Nós temos uma conexão incrível, nem chegamos a ficar e já começamos a namorar, e até hoje eu não acredito como ou o que fiz pra merecer você, porém, eu. sou grato por tê-la comigo! Ah, meu amor, foram muitas as noites em que nós éramos apenas amigos que eu já pensava em você no momento em que ia dormir e no momento que acordava, eu sabia que seria difícil fazer de você minha namorada, que qualquer "obstáculo" no nosso relacionamento fica fácil de resolver. Eu quero que você se sinta confortável e segura comigo, jamais irei te tocar de forma indecente sem o seu consentimento ou conforto, só quero deixar claro, meus planos com você é além desse desejo carnal, eu quero uma vida com você e apenas com você! Eu não sou perfeito, mas por ti eu deixo meu orgulho de lado e sempre, sempre, sempre, sempre farei qualquer coisa por você e sua felicidade. Só peço que você faça valer tudo isso a pena, como sempre vem fazendo! Amo sair com você, mas amo mais ainda estar apenas na sua presença deitados fazendo nada ou assistindo deitados ou abraçados, e sei que essa questão do toque físico não é muito o seu estilo de amor, mas é o meu e você também tem que entender que às vezes teremos que ficar assim, assim como eu lhe dou o espaço e tempo que você merece. Você não sabe a felicidade que eu fico quando me chama para ir à sua casa quando me chama, e principalmente do nada. Eu corro feliz para o banheiro para me arrumar e ir o quanto antes para ficar com você o máximo de tempo que eu puder. Não sei se já percebeu, mas as minhas linguagens de amor são o toque físico, o tempo de qualidade e atos de serviço. Não sou muito de palavras de afirmação pois são coisas minhas e de minha infância, se quiser te explico melhor depois essas coisas e o porquê eu sou tão apegado ao seu toque físico, abraços e beijos. Desculpa ser meio carente às vezes, mas eu quero sentir o seu amor através do toque. Eu amava quando há algum tempo você ficava abraçado comigo sem reclamar, e agora quando eu falo você meio que já se estressa(?), não sei dizer, você faz uma cara estranha, e isso me magoa, mas eu aguento calado porquê eu te amo, e também preciso entender que você não gosta muito, mas essa sua mudança me assusta, por favor, me dê carinho e amor!!! (eu chorei escrevendo isso). Não peço que seja repentina, a mudança, só que seja verdadeira, dure quanto tempo tenha que durar até você estar pronta. Eu te esperarei por todo o tempo do mundo, pelo motivo de eu simplesmente te amar. Essa é uma cartinha de amor para você, Kelly. Eu amo muito você, abro mão de qualquer desejo meu apenas por você. Você é meu tudo, com você a vida é mais colorida. Perdão por pôr essas coisas "chatas" numa carta de amor. Eu me sinto mal em te cobrar algo, porquê você pode acabar enjoando de mim. Mas por favor, tenha mais paciência comigo e não se estresse com pouca coisa que eu faço, eu só te peço isso. Você sabe como sou. Enfim, quero que minha vida seja junto da sua, pois você me faz um bem danado menina, eu te amo muito meu amor. Eu te dedico a minha vida inteira, a use da maneira que quiser! É toda sua, sou todo e inteiro seu. Amo-te de montão. Com amor e carinho, Nattan. Eu te amo
+
+
+ <br/>
+      </p>
+      <p class="assinatura">Com amor, Nattan 💌</p>
+    </div>
+  </section>
+
+</body>
+</html>
