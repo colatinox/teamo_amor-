@@ -1,3 +1,4 @@
+
 // --- Frases rotativas ---
 const frases = [
   'Você é meu sonho realizado 💖',
@@ -89,7 +90,7 @@ const ctx = canvas.getContext('2d');
 
 // Imagem da pasta do site
 const img = new Image();
-img.src = 'imagens/KellyDeSally.jpg';
+img.src = 'KellyDeSally.jpg';
 
 // Configurações do quebra-cabeça
 const rows = 4;
@@ -237,32 +238,36 @@ const perguntas = [
     correta: 'JJ Maybank',
   },
   {
-    pergunta: 'Qual sua cor favorita?', // Pergunta para Riquele, não conta para nota
-    correta: 'Vermelho',
-    naoConta: true,
+    pergunta: 'Quem é mais carinhoso?',
+    correta: 'Nattan',
   },
   {
-    pergunta: 'Qual seu prato preferido?', // Pergunta para Riquele, não conta para nota
-    correta: 'Lasanha',
-    naoConta: true,
+    pergunta: 'Nattan prefere passar o tempo com?', 
+     correta: 'Com a mulher que ele mais ama no mundo!',
   },
 ];
 
 // Função para criar alternativas com 3 erradas + correta embaralhadas
 function criarAlternativas(correta) {
   const opcoesErradas = [
-    'Batman',
-    'Homem-Aranha',
-    'Vingadores',
-    'Pikachu',
-    'Mario',
-    'Rosa',
-    'Azul',
-    'Verde',
-    'Pizza',
-    'Sushi',
-    'Hambúrguer',
-    'Spaghetti',
+   'The Witcher',
+'The Office',
+'Stranger Things',
+'Mater',
+'Sally',
+'Doc Hudson',
+'Luke Skywalker',
+'Obi-Wan Kenobi',
+'Yoda',
+'John B',
+'Kiara',
+'Pope',
+'Kelly',
+'Nattan e Kelly são iguais',
+'Ninguém é carinhoso',
+'Com amigos',
+'Sozinho',
+'Com a família'
   ];
 
   // Filtra para não repetir a correta

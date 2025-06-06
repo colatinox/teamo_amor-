@@ -19,16 +19,23 @@
 
    <!-- Música -->
 <section id="musica-section" class="centralizado">
-  <img src="imagens/spotify_logo.jpg" alt="Spotify" class="spotify-logo" />
-  <audio id="audio-player" controls>
-    <source src="musica/bryan_adams_heaven.mp3" type="audio/mpeg" />
+  <img src="spotify_logo.jpg" alt="Spotify" class="spotify-logo" />
+  <audio autoplay='autoplay' id="audio-player" controls>
+    <source src="bryan_adams_heaven.mp3" type="audio/mpeg" />
     Seu navegador não suporta áudio.
   </audio>
   <button onclick="tocarMusica()">Ouvir Música</button>
+  <button onclick="pausarMusica()">Pausar Música</button>
 </section>
 
 <script>
   function tocarMusica() {
+    const player = document.getElementById('audio-player');
+    player.play();
+  }
+</script>
+<script>
+  function pausarMusica() {
     const player = document.getElementById('audio-player');
     player.play();
   }
@@ -65,17 +72,17 @@
   <section id="carousel-section" class="centralizado">
     <h2>Galeria de Fotos</h2>
     <div class="carousel">
-      <img src="imagens/kellycrianca.jpg" alt="Kelly criança" class="polaroid" />
-      <img src="imagens/eucrianca.jpg" alt="Eu criança" class="polaroid" />
-      <img src="imagens/KellyDeSally.jpg" alt="Kelly de Sally" class="polaroid" />
-      <img src="imagens/afotododiadonossonamoro.jpg" alt="Foto do dia" class="polaroid" />
-      <img src="imagens/amordaminhavida.jpg" alt="Amor da minha vida" class="polaroid" />
-      <img src="imagens/kellydeftones.jpg" alt="Kelly Deftones" class="polaroid" />
-      <img src="imagens/kellynick.jpg" alt="Kelly Nick" class="polaroid" />
-      <img src="imagens/kellyskinliro.jpg" alt="Kelly Skin Liro" class="polaroid" />
-      <img src="imagens/meupresente.jpg" alt="Meu presente" class="polaroid" />
-      <img src="imagens/nosdois.jpg" alt="Nós dois" class="polaroid" />
-      <img src="imagens/noslindos.jpg" alt="Nós lindos" class="polaroid" />
+      <img src="kellycrianca.jpg" alt="Kelly criança" class="polaroid" />
+      <img src="eucrianca.jpg" alt="Eu criança" class="polaroid" />
+      <img src="KellyDeSally.jpg" alt="Kelly de Sally" class="polaroid" />
+      <img src="afotododiadonossonamoro.jpg" alt="Foto do dia" class="polaroid" />
+      <img src="amordaminhavida.jpg" alt="Amor da minha vida" class="polaroid" />
+      <img src="kellydeftones.jpg" alt="Kelly Deftones" class="polaroid" />
+      <img src="kellynick.jpg" alt="Kelly Nick" class="polaroid" />
+      <img src="kellyskinliro.jpg" alt="Kelly Skin Liro" class="polaroid" />
+      <img src="meupresente.jpg" alt="Meu presente" class="polaroid" />
+      <img src="nosdois.jpg" alt="Nós dois" class="polaroid" />
+      <img src="noslindos.jpg" alt="Nós lindos" class="polaroid" />
     </div>
   </section>
 
@@ -91,29 +98,29 @@
 <section id="esteira-section" class="centralizado">
   <div class="esteira">
     <div class="esteira-track">
-      <img src="imagens/kellycrianca.jpg" alt="Kelly criança" class="polaroid" />
-      <img src="imagens/eucrianca.jpg" alt="Eu criança" class="polaroid" />
-      <img src="imagens/KellyDeSally.jpg" alt="Kelly de Sally" class="polaroid" />
-      <img src="imagens/afotododiadonossonamoro.jpg" alt="Foto do dia" class="polaroid" />
-      <img src="imagens/amordaminhavida.jpg" alt="Amor da minha vida" class="polaroid" />
-      <img src="imagens/kellydeftones.jpg" alt="Kelly Deftones" class="polaroid" />
-      <img src="imagens/kellynick.jpg" alt="Kelly Nick" class="polaroid" />
-      <img src="imagens/kellyskinliro.jpg" alt="Kelly Skin Liro" class="polaroid" />
-      <img src="imagens/meupresente.jpg" alt="Meu presente" class="polaroid" />
-      <img src="imagens/nosdois.jpg" alt="Nós dois" class="polaroid" />
-      <img src="imagens/noslindos.jpg" alt="Nós lindos" class="polaroid" />
+      <img src="kellycrianca.jpg" alt="Kelly criança" class="polaroid" />
+      <img src="eucrianca.jpg" alt="Eu criança" class="polaroid" />
+      <img src="KellyDeSally.jpg" alt="Kelly de Sally" class="polaroid" />
+      <img src="afotododiadonossonamoro.jpg" alt="Foto do dia" class="polaroid" />
+      <img src="amordaminhavida.jpg" alt="Amor da minha vida" class="polaroid" />
+      <img src="kellydeftones.jpg" alt="Kelly Deftones" class="polaroid" />
+      <img src="kellynick.jpg" alt="Kelly Nick" class="polaroid" />
+      <img src="kellyskinliro.jpg" alt="Kelly Skin Liro" class="polaroid" />
+      <img src="meupresente.jpg" alt="Meu presente" class="polaroid" />
+      <img src="nosdois.jpg" alt="Nós dois" class="polaroid" />
+      <img src="noslindos.jpg" alt="Nós lindos" class="polaroid" />
       <!-- Duplicar as imagens para efeito contínuo -->
-      <img src="imagens/kellycrianca.jpg" alt="Kelly criança" class="polaroid" />
-      <img src="imagens/eucrianca.jpg" alt="Eu criança" class="polaroid" />
-      <img src="imagens/KellyDeSally.jpg" alt="Kelly de Sally" class="polaroid" />
-      <img src="imagens/afotododiadonossonamoro.jpg" alt="Foto do dia" class="polaroid" />
-      <img src="imagens/amordaminhavida.jpg" alt="Amor da minha vida" class="polaroid" />
-      <img src="imagens/kellydeftones.jpg" alt="Kelly Deftones" class="polaroid" />
-      <img src="imagens/kellynick.jpg" alt="Kelly Nick" class="polaroid" />
-      <img src="imagens/kellyskinliro.jpg" alt="Kelly Skin Liro" class="polaroid" />
-      <img src="imagens/meupresente.jpg" alt="Meu presente" class="polaroid" />
-      <img src="imagens/nosdois.jpg" alt="Nós dois" class="polaroid" />
-      <img src="imagens/noslindos.jpg" alt="Nós lindos" class="polaroid" />
+      <img src="kellycrianca.jpg" alt="Kelly criança" class="polaroid" />
+      <img src="eucrianca.jpg" alt="Eu criança" class="polaroid" />
+      <img src="KellyDeSally.jpg" alt="Kelly de Sally" class="polaroid" />
+      <img src="afotododiadonossonamoro.jpg" alt="Foto do dia" class="polaroid" />
+      <img src="amordaminhavida.jpg" alt="Amor da minha vida" class="polaroid" />
+      <img src="kellydeftones.jpg" alt="Kelly Deftones" class="polaroid" />
+      <img src="kellynick.jpg" alt="Kelly Nick" class="polaroid" />
+      <img src="kellyskinliro.jpg" alt="Kelly Skin Liro" class="polaroid" />
+      <img src="meupresente.jpg" alt="Meu presente" class="polaroid" />
+      <img src="nosdois.jpg" alt="Nós dois" class="polaroid" />
+      <img src="noslindos.jpg" alt="Nós lindos" class="polaroid" />
     </div>
   </div>
 </section>
